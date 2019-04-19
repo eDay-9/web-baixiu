@@ -1,0 +1,175 @@
+/* 管理页面的样式 */
+ul,li,h1{
+    margin: 0;
+    padding: 0; 
+}
+ul,li{
+    list-style-type: none;
+}
+/* 公共样式 */
+.html {
+    font-size: 62.5%;
+}
+.body {
+    font-size: 1.6rem;
+    background-color: #f8f9fb;
+}
+/* login start*/
+.login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2f4050;
+}
+.login-wrap {
+    position: relative;
+    margin: 180px auto;
+    max-width: 380px;
+    padding: 100px 40px 40px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.login-wrap .avatar{
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	margin-top: 70px;
+	margin-left: -70px;
+	width: 140px;
+	height: 140px;
+	border: 10px solid #fff;
+	border-radius: 50%;
+}
+/* login end */
+/* index start */
+.aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #2f4050;
+}
+
+.aside .profile{
+    padding: 25px;
+    text-align: center;
+    background-color: #243443;
+}
+
+.aside .profile .avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, .3);
+    object-fit: cover;
+}
+.aside .profile .name{
+    color: #a9b0c2;
+    font-size: 1.6rem;
+}
+.aside .nav{
+    padding: 10px 0;
+}
+.aside .nav li + li{
+    margin-top: 2px;
+}
+.aside .nav .active > a{
+    color: #f6f6f6;
+    background-color: #243443;
+}
+.aside .nav a{
+    color: #a9b0c2;
+    display: block;
+    padding: 10px 20px;
+}
+.aside .nav a:hover,
+.aside .nav a:focus {
+  color: #f6f6f6;
+  background-color: #213140;
+}
+.aside .nav a i:first-child{
+    margin-right: 10px;
+    width: 14px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.aside .nav a i.fa-angle-right{
+    float: right;
+    transition: transform .2s;
+    transform: rotate(90deg);
+    font-size: 16px;
+    line-height: 20px;
+}
+.aside .nav a.collapsed i.fa-angle-right{
+    float: right;
+    transform: rotate(0deg);
+}
+
+.aside .nav a + ul a{
+    padding-left: 30px;
+}
+.aside .nav a + ul li:first-child{
+    margin-top: 5px;
+}
+.aside .nav a + ul li:last-child{
+    margin-bottom: 5px;
+}
+.aside .nav li+li{
+    margin-top: 1px;
+}
+.main{
+    min-width: 844px;
+    min-height: 100px;
+    overflow: hidden;
+    padding: 70px 5px 20px 185px;
+}
+.main .navbar{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 180px;
+    padding: 0px 15px 0 10px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    height: 50px;
+    background-color: #fff;
+}
+.main .navbar .navbar-btn{
+    padding: 10px 12px;
+    border: 0;
+}
+
+
+.page-title{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.page-title h1{
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+.page-action{
+    margin-bottom: 20px;
+}
+
+.table th{
+    border: 1px solid #ddd !important;
+    /* border: 0; */
+}
+#post-add form label{
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: normal;
+}
+#post-add form .content{
+     resize:vertical;
+}
+#posts .page-action *{
+    box-shadow: none;
+}
+#posts .pagination{
+    margin: 0;
+}
+/* index end */
+
